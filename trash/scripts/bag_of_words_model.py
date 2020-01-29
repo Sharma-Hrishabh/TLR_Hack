@@ -1,9 +1,14 @@
 # Imports
+import sys
 import pandas as pd
+
+!pip install nltk
 
 # Read in file
 data = pd.read_csv('data.csv')
 
+arg = str(sys.argv)
+print(arg)
 
 #Rename the columns
 # data = data.rename(columns={'Category': 'category', 'Descript': 'message'})
